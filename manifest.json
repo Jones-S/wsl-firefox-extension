@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "WSL Player Extension",
+  "version": "1.0",
+
+  "description": "Removes loading spinner from WSL Player",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "permissions": ["activeTab", "scripting"],
+
+  "browser_action": {
+    "default_icon": "icons/wsl-extension-icon.png",
+    "default_title": "Remove video spinner"
+  },
+
+  "background": {
+      "scripts": ["index.js"],
+      "persistent": false
+  }
+}
